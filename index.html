@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#061b3a" />
+  <meta name="description" content="Roomiz is a student-built roommate concierge concept. Try our interactive UCR demo with fictional student profiles." />
+  <title>Roomiz | Room Right.</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="data.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M9 21v-8h6v8"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20v-2a6 6 0 0 1 12 0v2"/><path d="M17 5a3 3 0 0 1 0 6m2 9v-2a6 6 0 0 0-2.5-4.9"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.8 5.8 6.4.9-4.6 4.5 1.1 6.3L12 17.5l-5.7 3 1.1-6.3L2.8 9.7l6.4-.9z"/></symbol>
+    <symbol id="i-clipboard" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="16" rx="2"/><path d="M9 5.2V3h6v2.2M9 11h6m-6 4h6"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M9 7V4h6v3M3 13h18"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 2 8 3v6c0 5-3.5 8.7-8 11-4.5-2.3-8-6-8-11V5z"/><path d="m9 12 2 2 4-4"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="#top" class="brand" aria-label="Roomiz home"><span class="brand-mark"><svg class="icon"><use href="#i-home" /></svg></span><span>Room<span class="brand-highlight">iz</span></span></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#how">How it works</a><a href="#packages">Packages</a><a href="#demo">Interactive demo</a>
+      </nav>
+      <a class="btn btn-small btn-dark nav-cta" href="#demo">Try the demo <svg class="icon"><use href="#i-arrow" /></svg></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-glow hero-glow-a"></div><div class="hero-glow hero-glow-b"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> UCR-FIRST ROOMMATE CONCIERGE CONCEPT</div>
+          <h1>Roommate search, <em>handled.</em></h1>
+          <p class="hero-desc">Starting university is stressful enough. Finding a roommate shouldn't be. Roomiz helps students find compatible candidates and coordinates the introductions.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#demo">Try the matching demo <svg class="icon"><use href="#i-arrow" /></svg></a><a class="btn btn-ghost" href="#how">See how it works</a></div>
+          <p class="fine-print light"><svg class="icon"><use href="#i-shield"/></svg> Interactive prototype · fictional students · no real payment or account needed</p>
+        </div>
+        <div class="hero-visual" aria-label="Illustrative Roomiz candidate shortlist">
+          <div class="preview-topline"><span class="tiny-circle"></span><span class="tiny-circle"></span><span class="tiny-circle"></span><span class="preview-top-label">ROOMIZ / DEMO SHORTLIST</span></div>
+          <div class="mock-header"><div><span class="mini-eyebrow">PREVIEW</span><h2>Your future roommate starts here.</h2></div><span class="mock-sparkle">✦</span></div>
+          <div class="mock-card"><div class="avatar coral">AK</div><div><strong>Alex K.</strong><span>Early riser · Tidy · Study-focused</span></div><span class="match-pill">94%*</span></div>
+          <div class="mock-card"><div class="avatar violet">JM</div><div><strong>Jordan M.</strong><span>Quiet evenings · Neat · Flexible</span></div><span class="match-pill">89%*</span></div>
+          <div class="mock-card"><div class="avatar mint">SN</div><div><strong>Sam N.</strong><span>Similar schedule · Low-noise</span></div><span class="match-pill">86%*</span></div>
+          <div class="mock-bottom"><span><svg class="icon"><use href="#i-check" /></svg> Curated shortlist concept</span><span>*Illustrative scores</span></div>
+          <div class="float-tag"><span>✦</span> Less scrolling, more connecting</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stat-band" aria-label="Proposed Roomiz offering">
+      <div class="container stat-row"><div><strong>3–5</strong><span>targeted candidate shortlist</span></div><div><strong>$59.99</strong><span>Roommate Match</span></div><div><strong>$119.99</strong><span>Move-In Assistance</span></div><div><strong>UCR</strong><span>initial focus</span></div></div>
+    </section>
+
+    <section class="section how-section" id="how">
+      <div class="container"><div class="section-heading centered"><span class="kicker">HOW IT WORKS</span><h2>Three steps to a better starting point.</h2><p>A human-led approach, designed to take the work out of the search.</p></div>
+        <div class="steps-grid">
+          <article class="step-card"><span class="step-number">01</span><div class="step-icon lavender"><svg class="icon"><use href="#i-clipboard" /></svg></div><h3>Tell us your lifestyle</h3><p>Choose your housing type, sleep schedule, cleanliness, study habits and what matters most.</p></article>
+          <article class="step-card"><span class="step-number">02</span><div class="step-icon sky"><svg class="icon"><use href="#i-search" /></svg></div><h3>Review curated candidates</h3><p>In a real service, our team would source and review candidates. This demo uses fictional example profiles.</p></article>
+          <article class="step-card"><span class="step-number">03</span><div class="step-icon seafoam"><svg class="icon"><use href="#i-users" /></svg></div><h3>Request an introduction</h3><p>Select potential roommates and preview how our concierge team would coordinate next steps.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pricing-section" id="packages"><div class="container">
+      <div class="section-heading centered"><span class="kicker">SIMPLE PRICING</span><h2>Explore free. Get more help when you want it.</h2><p>One-time proposed prices. This prototype does not process payments.</p></div>
+      <div class="pricing-grid">
+        <article class="price-card"><div class="package-type">FREE</div><h3>Student Profile</h3><div class="price">$0</div><p>See how lifestyle matching works before you commit.</p><ul class="check-list"><li>Complete lifestyle questionnaire</li><li>Demo compatibility shortlist</li><li>Explore your preferences</li></ul><a href="#demo" class="btn btn-outline">Start free <svg class="icon"><use href="#i-arrow"/></svg></a></article>
+        <article class="price-card featured"><div class="ribbon">CORE PACKAGE</div><div class="package-type">ROOMMATE MATCH</div><h3>Concierge Matching</h3><div class="price">$59.99<span> / one-time</span></div><p>We do the searching and coordinate next steps.</p><ul class="check-list"><li>Candidate sourcing and review</li><li>Goal: 3–5 qualified candidates</li><li>Coordinated introductions</li><li>Mutual request guidance</li></ul><button class="btn btn-primary package-interest" data-package="Roommate Match ($59.99)">Preview package interest <svg class="icon"><use href="#i-arrow"/></svg></button></article>
+        <article class="price-card"><div class="package-type">MOVE-IN ASSISTANCE</div><h3>Extra Peace of Mind</h3><div class="price">$119.99<span> / one-time</span></div><p>Matching with an extra layer of organization.</p><ul class="check-list"><li>Everything in Roommate Match</li><li>Shopping and delivery planning</li><li>Move-in preparation checklist</li><li>Parent update coordination</li></ul><button class="btn btn-outline package-interest" data-package="Move-In Assistance ($119.99)">Preview package interest <svg class="icon"><use href="#i-arrow"/></svg></button></article>
+      </div>
+      <p class="fine-print pricing-note">Service scope, availability, guarantees, and prices are proposals for the investor demo. No actual service is purchased here.</p>
+    </div></section>
+
+    <section class="section demo-section" id="demo"><div class="container">
+      <div class="section-heading centered"><span class="kicker">INTERACTIVE PROTOTYPE</span><h2>Experience the Roomiz flow.</h2><p>Complete a profile, explore fictional candidates, and request a mock introduction.</p></div>
+      <div class="demo-shell">
+        <aside class="demo-aside"><div class="aside-heading"><span class="brand-mark small"><svg class="icon"><use href="#i-home"/></svg></span><strong>ROOMIZ DEMO</strong></div><p>Investor demo journey</p><ol><li>Complete the lifestyle profile</li><li>View compatibility results</li><li>Request an introduction</li><li>Check mock requests in Admin</li></ol><div class="aside-tip"><svg class="icon"><use href="#i-shield" /></svg><span>All candidates are fictional. Nothing is sent to a server.</span></div></aside>
+        <div class="demo-main">
+          <div class="demo-tabs" role="tablist" aria-label="Demo sections"><button type="button" class="demo-tab active" role="tab" aria-selected="true" aria-controls="panel-profile" data-view="profile">1. Your profile</button><button type="button" class="demo-tab" role="tab" aria-selected="false" aria-controls="panel-matches" data-view="matches">2. Your matches</button><button type="button" class="demo-tab" role="tab" aria-selected="false" aria-controls="panel-admin" data-view="admin">3. Demo admin</button></div>
+          <div class="demo-panel" id="panel-profile" role="tabpanel"><div class="panel-title-row"><div><h3>Build a roommate profile</h3><p>Adjust your preferences to see how demo matching changes.</p></div><span class="demo-badge">SAMPLE DATA</span></div>
+          <form id="profile-form" novalidate>
+            <div class="form-grid">
+              <label class="field">Housing preference<select name="housing" required><option value="dorm">UCR residence hall</option><option value="apartment">Off-campus apartment</option></select></label>
+              <label class="field">Typical bedtime<select name="sleep" required><option value="early">Before 11 PM</option><option value="standard" selected>11 PM – 1 AM</option><option value="late">After 1 AM</option></select></label>
+              <label class="field">Cleanliness level<select name="clean" required><option value="1">1 — Very relaxed</option><option value="2">2 — Somewhat relaxed</option><option value="3" selected>3 — Moderately tidy</option><option value="4">4 — Very tidy</option><option value="5">5 — Extremely tidy</option></select></label>
+              <label class="field">Noise tolerance<select name="noise" required><option value="1">1 — Need quiet</option><option value="2" selected>2 — Mostly quiet</option><option value="3">3 — Moderate noise</option><option value="4">4 — Social and lively</option><option value="5">5 — Noisy is fine</option></select></label>
+              <label class="field">Study style<select name="study" required><option value="room" selected>Quiet time in the room</option><option value="flexible">Flexible</option><option value="outside">Mostly elsewhere</option></select></label>
+              <label class="field">Guests in shared space<select name="guests" required><option value="rarely" selected>Rarely</option><option value="sometimes">Sometimes</option><option value="often">Often</option></select></label>
+              <label class="field budget-field" id="budget-field">Maximum monthly rent (off-campus)<select name="budget"><option value="950">Up to $950</option><option value="1200" selected>Up to $1,200</option><option value="1500">Up to $1,500</option><option value="2000">Up to $2,000</option></select></label>
+              <fieldset class="priority-field"><legend>What matters most? <span>(choose up to 3)</span></legend><div class="chip-group"><label class="chip"><input name="priority" type="checkbox" value="sleep" checked/><span>Sleep schedule</span></label><label class="chip"><input name="priority" type="checkbox" value="clean" checked/><span>Cleanliness</span></label><label class="chip"><input name="priority" type="checkbox" value="noise" checked/><span>Quiet environment</span></label><label class="chip"><input name="priority" type="checkbox" value="study"/><span>Study habits</span></label><label class="chip"><input name="priority" type="checkbox" value="guests"/><span>Guest habits</span></label></div></fieldset>
+            </div>
+            <p id="form-note" class="form-note" aria-live="polite"></p>
+            <div class="form-action-row"><span class="fine-print">No account, email, or ID required for this demo.</span><button class="btn btn-primary" type="submit">Find my demo matches <svg class="icon"><use href="#i-arrow"/></svg></button></div>
+          </form>
+          </div>
+          <div class="demo-panel hidden" id="panel-matches" role="tabpanel"><div class="panel-title-row"><div><h3>Your sample matches</h3><p id="matches-subtitle">Complete your profile to generate example roommate matches.</p></div><span class="demo-badge">FICTIONAL PROFILES</span></div>
+            <div id="matches-area"><div class="empty-state"><div class="empty-icon"><svg class="icon"><use href="#i-users"/></svg></div><strong>No matches generated yet</strong><p>Complete your profile first to see a curated shortlist preview.</p><button id="go-profile" class="btn btn-outline">Complete profile</button></div></div>
+          </div>
+          <div class="demo-panel hidden" id="panel-admin" role="tabpanel"><div class="panel-title-row"><div><h3>Admin preview</h3><p>Mock introduction requests and package interest, visible only in this browser.</p></div><span class="demo-badge">NOT A SECURE ADMIN PORTAL</span></div><div class="admin-summary"><div><strong id="request-count">0</strong><span>Intro requests</span></div><div><strong id="interest-count">0</strong><span>Package interest clicks</span></div></div><div id="admin-list"></div><button class="text-button" id="reset-demo" type="button">Reset demo data on this device</button></div>
+        </div>
+      </div>
+    </div></section>
+
+    <section class="section closing-section"><div class="container closing-inner"><div><span class="kicker">OUR APPROACH</span><h2>Room right. Start strong.</h2><p>From the search to the introduction, our proposed service helps students spend less time scrolling and more time preparing for college.</p></div><a href="#demo" class="btn btn-primary">Explore the demo <svg class="icon"><use href="#i-arrow"/></svg></a></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-row"><span class="brand footer-brand"><span class="brand-mark small"><svg class="icon"><use href="#i-home" /></svg></span>Roomiz</span><span>Student-built investor prototype · Not affiliated with or endorsed by UC Riverside</span><span>© 2026 Roomiz demo</span></div></footer>
+
+  <dialog id="package-dialog" class="package-dialog" aria-labelledby="dialog-heading"><div class="dialog-inner"><button class="dialog-x" id="dialog-close" aria-label="Close dialog">×</button><span class="kicker">DEMO ONLY</span><h2 id="dialog-heading">Package interest</h2><p id="dialog-description"></p><p class="dialog-notice">This will add a sample interest record to your browser's local demo admin view. No payment or message will be sent.</p><div class="dialog-actions"><button id="dialog-cancel" class="btn btn-outline">Cancel</button><button id="dialog-confirm" class="btn btn-primary">Record demo interest</button></div></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
